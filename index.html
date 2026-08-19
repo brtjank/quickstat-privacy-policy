@@ -75,7 +75,7 @@
     <div class="container">
         <h1>QuickStat Privacy Policy</h1>
         
-        <p class="last-updated"><strong>Last Updated:</strong> November 2025</p>
+        <p class="last-updated"><strong>Last Updated:</strong> August 2026</p>
 
         <h2>1. Introduction</h2>
         <p>QuickStat ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our basketball statistics tracking mobile application (the "App").</p>
@@ -101,7 +101,24 @@
         <h3>2.3 Technical Information</h3>
         <ul>
             <li><strong>Device Information:</strong> Device type, operating system version, app version</li>
-            <li><strong>Log Data:</strong> Error logs, performance data (for app improvement)</li>
+            <li><strong>Server Log Data:</strong> Our backend provider (Supabase) automatically records standard server logs, such as IP address, request timestamps and error information, when the App communicates with our servers</li>
+        </ul>
+        <p>As of the date of this policy, the App does not include third-party analytics, advertising or crash-reporting SDKs, and we do not track your activity across other apps or websites.</p>
+
+        <h3>2.4 Subscription and Purchase Information</h3>
+        <p>QuickStat offers auto-renewable subscriptions. We use <strong>RevenueCat</strong> to manage and validate these subscriptions.</p>
+        <ul>
+            <li><strong>Account Identifier:</strong> Your account identifier (a randomly generated UUID) is shared with RevenueCat so that purchases can be linked to your account</li>
+            <li><strong>Subscription Data:</strong> Depending on the platform and the purchase, this may include subscription status, product identifier, platform (iOS or Android), store transaction identifier, purchase token, store receipt data, trial and billing period dates, and subscription history</li>
+        </ul>
+        <p><strong>Payments:</strong> All payments are processed entirely by Apple (App Store) and Google (Google Play). We never receive or store your payment card details.</p>
+
+        <h3>2.5 Information About Other People (Players)</h3>
+        <p>The App allows coaches to record information about players who are not themselves users of the App, including player names, jersey numbers and performance data. Some of these players may be minors.</p>
+        <ul>
+            <li><strong>Who is responsible:</strong> The coach or organization entering this information is the data controller for it, and is responsible for having a lawful basis for the processing and for obtaining any consent required (for example, from a parent or legal guardian) before entering it into the App</li>
+            <li><strong>Our role:</strong> We act as a processor for this information and use it only to provide the App to the organization that entered it</li>
+            <li><strong>Children:</strong> The App is intended for use by coaches and other adults. We do not knowingly collect information directly from children, and children do not create accounts in the App</li>
         </ul>
 
         <h2>3. How We Use Your Information</h2>
@@ -124,12 +141,20 @@
         <h3>4.2 Limited Sharing</h3>
         <p>We may share your information only in the following circumstances:</p>
         <ul>
-            <li><strong>Service Providers:</strong> With trusted third-party services (Supabase, Google, Apple, Facebook) that help us operate the App</li>
+            <li><strong>Service Providers:</strong> With trusted third-party services (Supabase, Google, Apple, Facebook, RevenueCat) that help us operate the App</li>
             <li><strong>Legal Requirements:</strong> When required by law or to protect our rights</li>
             <li><strong>Business Transfers:</strong> In connection with a merger, acquisition, or sale of assets</li>
         </ul>
 
-        <h3>4.3 Data Storage</h3>
+        <h3>4.3 Sharing Within Your Organization</h3>
+        <p>QuickStat is a multi-tenant application: each user belongs to an organization, and every member of an organization has a role (<strong>admin</strong>, <strong>power coach</strong> or <strong>coach</strong>).</p>
+        <ul>
+            <li><strong>Shared Data:</strong> Data entered within an organization (teams, players, games and statistics) is visible to other members of that organization, according to their role and the team access assigned to them</li>
+            <li><strong>Invitations:</strong> When an admin invites someone to join the organization, that person's email address is stored in the organization's invitation records and may be visible to administrators of that organization</li>
+            <li><strong>Billing Contact:</strong> An organization may also store a billing email address</li>
+        </ul>
+
+        <h3>4.4 Data Storage</h3>
         <p>Your data is stored securely using Supabase, a trusted cloud database service.</p>
 
         <h2>5. Data Security</h2>
@@ -139,6 +164,7 @@
             <li><strong>Access Controls:</strong> Data access is restricted to authorized personnel only</li>
             <li><strong>Regular Updates:</strong> We regularly update our app to maintain security</li>
         </ul>
+        <p>However, no method of transmission over the internet or method of electronic storage is completely secure, and we cannot guarantee absolute security.</p>
 
         <h2>6. Data Retention</h2>
         <p>We retain your information for as long as:</p>
@@ -155,7 +181,7 @@
             <li><strong>Access:</strong> Request a copy of your personal data</li>
             <li><strong>Rectification:</strong> Correct inaccurate information</li>
             <li><strong>Erasure:</strong> Request deletion of your data or delete your account directly in the app</li>
-            <li><strong>Portability:</strong> Export your data</li>
+            <li><strong>Portability:</strong> Request a copy of your data in a commonly used electronic format by contacting us at the address in section 11</li>
             <li><strong>Withdraw Consent:</strong> Stop using the App and request data deletion</li>
         </ul>
 
@@ -170,15 +196,15 @@
             <li>Tap the button and confirm your decision</li>
         </ol>
 
-        <p><strong>⚠️ Warning:</strong> Account deletion is <strong>permanent</strong> and <strong>cannot be undone</strong>. When you delete your account, all your data will be permanently removed from our servers, including:</p>
+        <p><strong>⚠️ Warning:</strong> Account deletion is <strong>permanent</strong> and <strong>cannot be undone</strong>.</p>
+
+        <p><strong>What happens to your data depends on your organization:</strong></p>
         <ul>
-            <li>All teams</li>
-            <li>All players</li>
-            <li>All plays</li>
-            <li>All seasons</li>
-            <li>All games</li>
-            <li>All statistics and analytics</li>
+            <li><strong>If you are the only member of your organization:</strong> deleting your account also deletes the organization and all of its data, including all teams, players, plays, seasons, games, and statistics and analytics</li>
+            <li><strong>If your organization has other members:</strong> deleting your account removes your user account and your membership in the organization. The organization's shared data (teams, players, games and statistics) remains, because it belongs to the organization and remains available to its other members</li>
         </ul>
+
+        <p>After deletion, residual copies may remain in our provider's routine backups for a limited period before they are overwritten, and we may retain limited records where we are required to do so by law (for example, records relating to purchases).</p>
 
         <div class="contact-info">
             <p><strong>Need help with account deletion?</strong></p>
@@ -192,6 +218,8 @@
             <li><strong>Google:</strong> Authentication and sign-in services</li>
             <li><strong>Apple:</strong> Authentication and sign-in services (iOS)</li>
             <li><strong>Facebook:</strong> Authentication and sign-in services</li>
+            <li><strong>RevenueCat:</strong> Subscription management provider (handling and validation of auto-renewable subscriptions)</li>
+            <li><strong>Apple App Store / Google Play:</strong> Payment processors for subscriptions</li>
             <li><strong>Expo:</strong> App development and deployment platform</li>
         </ul>
         <p>These services have their own privacy policies, which we encourage you to review.</p>
